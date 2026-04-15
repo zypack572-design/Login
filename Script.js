@@ -23,5 +23,8 @@ app.post('/register', (req, res) => {
         }
         res.send("Registration successful! Data stored in users.db.");
     });
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // This stops the page from refreshing!
+    console.log("Form submitted!");
 });
 
